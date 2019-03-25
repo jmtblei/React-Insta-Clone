@@ -1,14 +1,14 @@
 import React from 'react';
-import 'SearchBar.css';
+import './SearchBar.css';
 
-const SearchBar = props => {
+const SearchBar = () => {
     return (
         <div className="search-bar-wrapper">
-            <div>
-                <p>
-                    <span><i class="fab fa-instagram"></i></span>
+            <div className="insta-icon">
+                <span><i className="fab fa-instagram"></i></span>
+                <div className="header">
                     Instagram
-                </p>
+                </div>
             </div>
             <div>
                 <input
@@ -16,10 +16,16 @@ const SearchBar = props => {
                 placeholder="Search"
                 />
             </div>
-            <div>
-                <i class="far fa-compass"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-user"></i>
+            <div className="icon-wrapper">
+                <div className="icon">
+                    <i className="far fa-compass"></i>
+                </div>
+                <div className="icon">
+                    <i className="far fa-heart"></i>
+                </div>
+                <div className="icon">
+                    <i className="far fa-user"></i>
+                </div>
             </div>
         </div>
         

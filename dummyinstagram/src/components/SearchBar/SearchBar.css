@@ -1,0 +1,24 @@
+.search-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.insta-icon {
+    display: flex;
+}
+
+.insta-icon .header {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.icon-wrapper {
+    display: flex;
+}
+
+.icon {
+    margin-left: 50px;
+}
