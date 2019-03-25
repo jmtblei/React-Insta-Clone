@@ -13,9 +13,9 @@ class CommentSection extends React.Component {
   render() {
     return (
       <div>
-        {this.state.comments.map((c, i) => (
-          <Comment key={i} 
-          comment={c} 
+        {this.state.comments.map((coms, index) => (
+          <Comment key={index} 
+          comment={coms} 
           />
         ))}
       </div>
