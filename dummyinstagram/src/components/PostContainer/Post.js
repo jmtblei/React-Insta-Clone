@@ -13,7 +13,7 @@ const Post = props => {
                             alt=""
                             />
                     </div>
-                    <div className="weighted">
+                    <div className="weighted indented">
                         <p>
                             {props.post.username}                      
                         </p>
@@ -33,7 +33,7 @@ const Post = props => {
                         <i className="far fa-comment"></i>
                     </div>
                 </div>
-                <div className="weighted">
+                <div className="weighted indented">
                     {props.post.likes} Likes
                 </div>
                 <div>
