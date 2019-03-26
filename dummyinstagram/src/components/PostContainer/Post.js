@@ -4,30 +4,44 @@ import CommentSection from '../CommentSection/CommentSection';
 
 const Post = props => {
     return (
-        <div className="post-container">
-            <div className="thumbnail-username">
-                <span>
+        <div className="top-border">
+            <div className="post-container">
+                <div className="thumbnail-username">
+                    <div className="thumbnail">
+                            <img 
+                            src={props.post.thumbnailUrl}
+                            alt=""
+                            />
+                    </div>
+                    <div className="weighted">
+                        <p>
+                            {props.post.username}                      
+                        </p>
+                    </div>
+                </div>
+                <div>
                     <img 
-                    src={props.post.thumbnailUrl}
+                    src={props.post.imageUrl}
                     alt=""
                     />
-                    </span>
-                {props.post.username}
-            </div>
-            <div className="post-image">
-                <img 
-                src={props.post.imageUrl}
-                alt=""
-                />
-            </div>
-            <div>
-                {props.post.timestamp}
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-                {props.post.likes}
-            </div>
-            <div>
-                <CommentSection comments={props.post.comments}/>
+                </div>
+                <div className="post-stats">
+                    <div className="post-icons">
+                        <i className="far fa-heart"></i>
+                    </div>   
+                    <div className="post-icons">
+                        <i className="far fa-comment"></i>
+                    </div>
+                </div>
+                <div className="weighted">
+                    {props.post.likes} Likes
+                </div>
+                <div>
+                    <CommentSection comments={props.post.comments}/>
+                </div>
+                <div className="faded">
+                    {props.post.timestamp}
+                </div>
             </div>
         </div>
     )

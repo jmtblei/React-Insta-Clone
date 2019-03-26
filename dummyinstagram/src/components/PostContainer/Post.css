@@ -1,3 +1,39 @@
+.top-border {
+    border-top: 5px solid lightgrey;
+    margin: 20px auto;
+    max-width: 640px;
+}
+
 .post-container {
-    border: 1px solid red;
+    border: 1px solid lightgrey;
+    max-width: 640px;
+    margin: 20px auto;
+}
+
+.thumbnail-username {
+    display: flex;
+    padding: 15px;
+}
+
+.thumbnail img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.weighted {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.post-stats {
+    display: flex;
+}
+
+.post-stats .post-icons {
+    margin: 10px;
+}
+
+.faded {
+    color: gray;
+    margin: 10px;
 }

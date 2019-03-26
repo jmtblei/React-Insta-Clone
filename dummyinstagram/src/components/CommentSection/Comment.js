@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 const Comment = props => {
     return (
         <div>
-            <span>{props.comment.username}</span>
-            <span>{props.comment.text}</span>
+            <span className="weighted">{props.comment.username}</span>
+            <span className="indented">{props.comment.text}</span>
         </div>
     )
 };
