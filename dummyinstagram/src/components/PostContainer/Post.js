@@ -33,7 +33,7 @@ const Post = props => {
                         <i className="far fa-comment"></i>
                     </div>
                 </div>
-                <div className="weighted indented">
+                <div className="likes weighted indented">
                     {props.post.likes} Likes
                 </div>
                 <div>

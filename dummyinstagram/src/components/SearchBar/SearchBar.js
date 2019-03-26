@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = props => {
     return (
         <div className="search-bar-wrapper">
             <div className="insta-icon">
@@ -14,6 +14,7 @@ const SearchBar = () => {
                 <input
                 type="text"
                 placeholder="Search"
+                onKeyDown={props.searchPosts}
                 />
             </div>
             <div className="icon-wrapper">

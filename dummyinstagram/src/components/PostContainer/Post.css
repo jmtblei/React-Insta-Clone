@@ -28,6 +28,10 @@
     margin-left: 10px;
 }
 
+.likes {
+    margin-bottom: 5px;
+}
+
 .post-stats {
     display: flex;
 }
