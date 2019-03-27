@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import dummyData from "../src/dummy-data";
-import SearchBar from "./components/SearchBar/SearchBar";
-import PostContainer from "./components/PostContainer/PostContainer";
+import dummyData from "../../dummy-data";
+import SearchBar from "../SearchBar/SearchBar";
+import PostContainer from "../PostContainer/PostContainer";
 
-class PostsPage extends Component {
+class PostPage extends Component {
   constructor() {
     super();
     this.state = {
@@ -47,4 +47,4 @@ class PostsPage extends Component {
   }
 }
 
-export default PostsPage;
+export default PostPage;

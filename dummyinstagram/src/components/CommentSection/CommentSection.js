@@ -12,7 +12,7 @@ class CommentSection extends React.Component {
     };
   }
 
-  commentHandler = event => {
+  handleCommentInput = event => {
       this.setState({
         inputText: event.target.value
       });
@@ -42,7 +42,7 @@ class CommentSection extends React.Component {
         ))}
         <CommentForm
         inputText={this.state.inputText} 
-        commentHandler={this.commentHandler}
+        commentInput={this.handleCommentInput}
         addComment={this.handleAddComment}
         />
       </div>
