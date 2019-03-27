@@ -32,6 +32,10 @@
     margin-bottom: 5px;
 }
 
+.liked:hover {
+    color: red;
+}
+
 .post-stats {
     display: flex;
 }

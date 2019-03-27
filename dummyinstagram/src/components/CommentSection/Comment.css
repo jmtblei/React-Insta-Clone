@@ -1,3 +1,15 @@
 .comment-container {
     margin: 5px 10px 0;
 }
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.input-text {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.25rem;
+}

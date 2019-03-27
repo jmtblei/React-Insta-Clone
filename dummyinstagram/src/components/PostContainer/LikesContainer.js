@@ -4,7 +4,7 @@ const LikesContainer = props => {
     return (
         <div onClick={props.upLike}>         
             <div className="post-stats">
-                <div className="post-icons">
+                <div className="post-icons liked">
                     <i className="far fa-heart"></i>
                 </div>   
                 <div className="post-icons">

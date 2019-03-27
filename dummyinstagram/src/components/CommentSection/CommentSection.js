@@ -20,7 +20,7 @@ class CommentSection extends React.Component {
 
   handleAddComment = event => {
       event.preventDefault();
-      const newComment = {
+      const newComment = { 
           username: 'jmtblei',
           text: this.state.inputText
       }
@@ -28,7 +28,7 @@ class CommentSection extends React.Component {
       this.setState({
           comments: [...this.state.comments, newComment],
           inputText:'' 
-      })
+      }, console.log(this.state.comments))
     
   }
 
@@ -41,8 +41,8 @@ class CommentSection extends React.Component {
           />
         ))}
         <CommentForm
-        comment={this.state.inputText} 
-        commentInput={this.commentHandler}
+        inputText={this.state.inputText} 
+        commentHandler={this.commentHandler}
         addComment={this.handleAddComment}
         />
       </div>
