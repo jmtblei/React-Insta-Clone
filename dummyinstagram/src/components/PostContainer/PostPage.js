@@ -2,6 +2,19 @@ import React, { Component } from "react";
 import dummyData from "../../dummy-data";
 import SearchBar from "../SearchBar/SearchBar";
 import PostContainer from "../PostContainer/PostContainer";
+import styled from 'styled-components';
+
+const LogOut = styled.button`
+  margin: 10px 0 5px;
+  padding: 5px 30px;
+  background-color: #4DA4FE;
+  color: white;
+  font-weight: 700;
+  &:hover {
+    background-color: white;
+    color: #4DA4FE;
+  }
+;`
 
 class PostPage extends Component {
   constructor() {
@@ -42,7 +55,7 @@ class PostPage extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.handleLogOut} className="logout-button">Logout</button>
+        <LogOut onClick={this.handleLogOut}>Log Out</LogOut>
         <SearchBar 
         searchPosts={this.handlerSearch} 
         />
