@@ -1,52 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-// import dummyData from "../src/dummy-data";
-// import SearchBar from "./components/SearchBar/SearchBar";
-// import PostContainer from "./components/PostContainer/PostContainer";
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       posts: [],
-//       filtered: []
-//     };
-//   }
-
-//   componentDidMount = () => {
-//     this.setState({
-//       posts: dummyData
-//     });
-//   };
-
-//   handlerSearch = event => {
-//     const posts = this.state.posts.filter(post => {
-//       if (post.username.includes(event.target.value)) {
-//         return post;
-//       }
-//     });
-//     this.setState({
-//       filtered: posts
-//     });
-//   };
-
-//   render() {
-//     return (
-//       <div className="App">
-//         <SearchBar 
-//         searchPosts={this.handlerSearch} 
-//         />
-//         <PostContainer
-//           posts={
-//             this.state.filtered.length > 0
-//               ? this.state.filtered
-//               : this.state.posts
-//           }
-//         />
-//       </div>
-//     );
-//   }
-// }
 import PostPage from './components/PostContainer/PostPage';
 import Login from './components/Login/Login';
 import withAuthenticate from './components/Authentication/withAuthenticate';
@@ -59,9 +12,20 @@ class App extends Component {
     this.state = {};
   }
 
+//   componentDidMount() {
+//     localStorage.getItem('user') && localStorage.getItem('pw')
+//   }
+
+//   handleLogOut = event => {
+//     localStorage.clear()
+//     this.setState({ loggedIn: false });
+//     window.location.reload();
+// }
+
   render() {
     return (
       <div>
+        {/* <button onClick={this.handleLogOut}>Logout</button> */}
         <ComponentFromWithAuthenticate />
       </div>
     )

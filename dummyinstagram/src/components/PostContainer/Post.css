@@ -48,3 +48,7 @@
     color: gray;
     margin: 10px;
 }
+
+.logout-button {
+    margin: 10px 10px 0 20px;
+}

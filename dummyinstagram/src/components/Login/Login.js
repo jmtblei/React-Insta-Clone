@@ -16,8 +16,8 @@ class Login extends Component {
     }
 
     handleLoginSubmit = event => {
-        const user = this.state.username;
-        localStorage.setItem('user', user);
+        localStorage.setItem('user', this.state.username);
+        localStorage.setItem('pw', this.state.username);
         window.location.reload();
     }
 
@@ -43,7 +43,7 @@ class Login extends Component {
                     onChange={this.handleLoginInput}
                     />
                     <br />
-                    <button onSubmit={this.handleLoginSubmit}>
+                    <button onClick={this.handleLoginSubmit}>
                         Log In
                     </button>
                 </div>

@@ -5,15 +5,15 @@ const withAuthenticate = PostPage => Login =>
         constructor(props) {
             super(props);
             this.state = {
-                loggedin: false
+                loggedIn: false
             }
         }
 
         componentDidMount() {
-            if (!localStorage.getItem('user')) {
-                this.setState({ loggedIn: false });
-              } else {
+            if (localStorage.getItem('user') && localStorage.getItem('pw')) {
                 this.setState({ loggedIn: true });
+            } else {
+                this.setState({ loggedIn: false });
             }
         }
 
