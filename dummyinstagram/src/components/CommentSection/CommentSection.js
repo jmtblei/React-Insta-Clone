@@ -12,6 +12,10 @@ class CommentSection extends React.Component {
     };
   }
 
+  componentDidMount() {
+    localStorage.getItem('user')
+  }
+
   handleCommentInput = event => {
       this.setState({
         inputText: event.target.value
@@ -21,7 +25,7 @@ class CommentSection extends React.Component {
   handleAddComment = event => {
       event.preventDefault();
       const newComment = { 
-          username: 'jmtblei',
+          username: localStorage.getItem('user'),
           text: this.state.inputText
       }
       console.log(newComment)

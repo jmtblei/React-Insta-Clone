@@ -17,6 +17,12 @@ const withAuthenticate = PostPage => Login =>
             }
         }
 
+        handleLogOut = event => {
+            localStorage.clear()
+            this.setState({ loggedIn: false });
+            window.location.reload();
+        }
+
         render() {
             if (this.state.loggedIn) {
                 return <PostPage />
