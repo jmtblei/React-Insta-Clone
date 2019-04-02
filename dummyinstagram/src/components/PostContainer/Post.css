@@ -1,0 +1,54 @@
+.top-border {
+    border-top: 5px solid lightgrey;
+    margin: 20px auto;
+    max-width: 640px;
+}
+
+.post-container {
+    border: 1px solid lightgrey;
+    max-width: 640px;
+    margin: 20px auto;
+}
+
+.thumbnail-username {
+    display: flex;
+    padding: 15px;
+}
+
+.thumbnail img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.weighted {
+    font-weight: 700;
+}
+
+.indented {
+    margin-left: 10px;
+}
+
+.likes {
+    margin-bottom: 5px;
+}
+
+.liked:hover {
+    color: red;
+}
+
+.post-stats {
+    display: flex;
+}
+
+.post-stats .post-icons {
+    margin: 10px;
+}
+
+.faded {
+    color: gray;
+    margin: 10px;
+}
+
+.logout-button {
+    margin: 20px 0 10px;
+}
